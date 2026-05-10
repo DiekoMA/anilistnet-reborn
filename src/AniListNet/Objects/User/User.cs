@@ -80,4 +80,18 @@ public class User
     /// <remarks>Requires user authentication with AniList!</remarks>
     [GqlSelection("isBlocked")]
     public bool IsBlocked { get; private set; }
+    
+    
+    /// <summary>
+    /// 
+    /// <summary>
+    ///
+    [GqlSelection("createdAt")]
+    public int CreatedAt { get; private set; }
+    
+    [GqlSelection("donatorBadge")]
+    public string? DonatorBadge { get; private set; }
+    
+    [GqlSelection("donatorTier")]
+    public int DonatorTier { get; private set; }
 }
