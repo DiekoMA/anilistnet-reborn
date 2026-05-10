@@ -46,7 +46,12 @@ public class User
     /// </summary>
     [GqlSelection("mediaListOptions")]
     public UserListOptions ListOptions { get; private set; }
-
+    
+    /// <summary>
+    /// The user's media stats.
+    /// </summary>
+    [GqlSelection("statistics")]
+    public UserStatisticsTypes Statistics { get; private set; }
     /// <summary>
     /// The URL for the user page on the AniList website.
     /// </summary>
